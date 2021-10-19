@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GestureRecognizerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ersan1" translatesAutoresizingMaskIntoConstraints="NO" id="6Jr-JN-DAc">
+                                <rect key="frame" x="35" y="146" width="345" height="268"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ersan fotoğraf 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXG-uY-Lbe">
+                                <rect key="frame" x="96" y="448" width="223" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="6Hz-7D-Hy1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Jr-JN-DAc" firstAttribute="centerX" secondItem="WXG-uY-Lbe" secondAttribute="centerX" id="7P9-aB-9Mp"/>
+                            <constraint firstItem="WXG-uY-Lbe" firstAttribute="top" secondItem="6Jr-JN-DAc" secondAttribute="bottom" constant="34" id="7oR-6L-CFZ"/>
+                            <constraint firstItem="6Jr-JN-DAc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EcJ-Cd-EmJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WXG-uY-Lbe" secondAttribute="bottom" constant="362" id="Kat-1S-FMQ"/>
+                            <constraint firstItem="6Jr-JN-DAc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="ZAt-Dq-rCl"/>
+                            <constraint firstItem="6Jr-JN-DAc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="102" id="brN-bG-HWx"/>
+                            <constraint firstItem="WXG-uY-Lbe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="96" id="mRg-lG-Xxq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="6Jr-JN-DAc" id="trG-aX-4o9"/>
+                        <outlet property="nameLabel" destination="WXG-uY-Lbe" id="3hb-cP-gb6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.98550724637681" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ersan1" width="3000" height="4000"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
