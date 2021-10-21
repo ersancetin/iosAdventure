@@ -19,6 +19,9 @@ class ImageView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        imageView.image = selectedImage
+        landmarkLabel.text = selectedName
 
         // Do any additional setup after loading the view.
     }
