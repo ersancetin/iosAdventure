@@ -16,25 +16,22 @@ class ImageView: UIViewController {
     var selectedImage = UIImage()
     var selectedName = ""
     
+    //öncelikle burada değişkenleri tanımlıyoruz
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         imageView.image = selectedImage
         landmarkLabel.text = selectedName
+        
+        //burada ise tanımladığımız değişkenleri, imageview'in image'ine
+        //label'in text'ine atıyoruz
+        
+        //diğer sayfadaki prepare for segue sayesinde otomatik olarak dönmüş oluyor değişkenler
 
-        // Do any additional setup after loading the view.
+
+        
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
